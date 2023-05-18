@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet Ms', sans-serif;
+}
+
+#pagina-home {
+    height: 100vh;
+    background: linear-gradient(rgba(194, 188, 146, 0.247), rgba(48, 42, 1, 0.534)), url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal {
+    display: inline-block;
+}
+ .menu-principal ul li {
+    display: inline-block;
+ }
+
+ .menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; /* letra maiuscula */
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.06s ease;
+ }
+
+ .menu-principal ul li a:hover {
+    background-color: white;
+    color: black;
+ }
+
+ .menu-principal ul li .link-ativo {
+    background: rgb(255,255,255);
+    color: black;
+ }
+
+ h1 {
+    font-size: 70px;
+    color: white;
+    margin-bottom: 30px;
+ }
+
+ .btn {
+    border: 1px solid white;
+    padding: 10px 80px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+ }
+
+ .btn:hover {
+    background: white;
+    color: black;
+ }
+
+ #pagina-home main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+ }
+
+ #pagina-servicos {
+    height: 60vh;
+    padding-left: 20px;
+ }
+
+ table {
+    border: 1px solid black;
+    padding: 3px;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+ }
+
+ td {
+    border: 1px solid black;
+    padding: 10px;
+ }
+
