@@ -1,98 +1,155 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet Ms', sans-serif;
+   margin: 0;
+   padding: 0;
+   font-family: 'Trebuchet Ms', sans-serif;
 }
 
 #pagina-home {
-    height: 100vh;
-    background: linear-gradient(rgba(194, 188, 146, 0.247), rgba(48, 42, 1, 0.534)), url(../imagens/fundo.jpg);
-    background-size: cover;
-    background-position: center;
+   height: 100vh;
+   background: linear-gradient(rgba(194, 188, 146, 0.247), rgba(48, 42, 1, 0.534)), url(../imagens/fundo.jpg);
+   background-size: cover;
+   background-position: center;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .logo {
-    width: 150px;
+   width: 150px;
 }
 
 .menu-principal ul {
-    list-style: none;
+   list-style: none;
 }
 
 .menu-principal {
-    display: inline-block;
+   display: inline-block;
 }
- .menu-principal ul li {
-    display: inline-block;
- }
 
- .menu-principal ul li a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase; /* letra maiuscula */
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.06s ease;
- }
+.menu-principal ul li {
+   display: inline-block;
+}
 
- .menu-principal ul li a:hover {
-    background-color: white;
-    color: black;
- }
+.menu-principal ul li a {
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   /* letra maiuscula */
+   padding: 5px 20px;
+   border: 1px solid transparent;
+   transition: 0.06s ease;
+}
 
- .menu-principal ul li .link-ativo {
-    background: rgb(255,255,255);
-    color: black;
- }
+.menu-principal ul li a:hover {
+   background-color: white;
+   color: black;
+}
 
- h1 {
-    font-size: 70px;
-    color: white;
-    margin-bottom: 30px;
- }
+.menu-principal ul li .link-ativo {
+   background: rgb(255, 255, 255);
+   color: black;
+}
 
- .btn {
-    border: 1px solid white;
-    padding: 10px 80px;
-    color: white;
-    text-decoration: none;
-    transition: 0.6s ease;
- }
+h1 {
+   font-size: 70px;
+   color: white;
+   margin-bottom: 30px;
+}
 
- .btn:hover {
-    background: white;
-    color: black;
- }
+.btn {
+   border: 1px solid white;
+   padding: 10px 80px;
+   color: white;
+   text-decoration: none;
+   transition: 0.6s ease;
+}
 
- #pagina-home main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
- }
+.btn:hover {
+   background: white;
+   color: black;
+}
 
- #pagina-servicos {
-    height: 60vh;
-    padding-left: 20px;
- }
+#pagina-home main {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+}
 
- table {
-    border: 1px solid black;
-    padding: 3px;
-    width: 50%;
-    text-align: center;
-    border-collapse: collapse;
- }
+#pagina-servicos,
+#pagina-galeria {
+   height: 60vh;
+   padding-left: 20px;
+}
 
- td {
-    border: 1px solid black;
-    padding: 10px;
- }
+table {
+   border: 1px solid black;
+   padding: 3px;
+   width: 50%;
+   text-align: center;
+   border-collapse: collapse;
+}
 
+td {
+   border: 1px solid black;
+   padding: 10px;
+}
+
+#pagina-servicos main {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+}
+
+th {
+   width: 50%;
+}
+
+tbody tr:nth-child(even) {
+   background: #f2f2f2;
+}
+
+#pagina-galeria figure {
+   margin: 30px;
+   text-align: center;
+   filter: grayscale(0);
+   transition: 0.03s ease;
+}
+
+#pagina-galeria figure:hover {
+   filter: grayscale(1);
+}
+
+#pagina-galeria main {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.fotos {
+   width: 300px;
+   height: 200px;
+}
+
+#pagina-galeria figure img{
+   border: 1px solid #555;
+   padding: 5px;
+}
+
+#pagina-galeria figure figcaption {
+   background: #0a9b3a;
+   color: white;
+   padding: 5px;
+}
+
+#pagina-galeria {
+   background: linear-gradient(rgba(230, 233, 229, 0.808), rgba(17, 182, 122, 0.952));
+}
